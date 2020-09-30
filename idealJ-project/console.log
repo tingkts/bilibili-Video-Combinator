@@ -1,0 +1,265 @@
+"C:\Program Files\Java\jdk-13.0.2\bin\java.exe" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:53162,suspend=y,server=n -Dfile.encoding=UTF-8 -classpath D:\IDE\IntelliJ-IDEA\workspaces\bilicombinevideo\out\production\bili;D:\IDE\IntelliJ-IDEA\ideaIC-2020.2.2.win\lib\idea_rt.jar ting.bili.combine.video.Main
+Connected to the target VM, address: '127.0.0.1:53162', transport: 'socket'
+
+D:\bilibili\download\4758384 have multiple files
+parse D:\bilibili\download\4758384\1\entry.json
+{"media_type":2,"has_dash_audio":true,"is_completed":true,"total_bytes":100573581,"downloaded_bytes":100573581,"title":"Python全套视频教程","type_tag":"16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1920823,"danmaku_count":254,"time_update_stamp":1601438213268,"time_create_stamp":1601430199435,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7724483,"page":1,"from":"vupload","part":"P1","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+D:\bilibili\download\4758384\1\16\video.m4s + D:\bilibili\download\4758384\1\16\audio.m4s
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\1\16\video.m4s -i D:\bilibili\download\4758384\1\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\1.mp4
+
+parse D:\bilibili\download\4758384\10\entry.json
+{"media_type":2,"has_dash_audio":true,"is_completed":true,"total_bytes":237450977,"downloaded_bytes":237450977,"title":"Python全套视频教程","type_tag":"16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":4536917,"danmaku_count":28,"time_update_stamp":1601438424127,"time_create_stamp":1601430199558,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7723775,"page":10,"from":"vupload","part":"P10","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+D:\bilibili\download\4758384\10\16\video.m4s + D:\bilibili\download\4758384\10\16\audio.m4s
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\10\16\video.m4s -i D:\bilibili\download\4758384\10\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\10.mp4
+
+parse D:\bilibili\download\4758384\11\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":140780369,"downloaded_bytes":140780369,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":2055661,"danmaku_count":31,"time_update_stamp":1601438458817,"time_create_stamp":1601430199563,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7735315,"page":11,"from":"vupload","part":"P11","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\11\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\11\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\11\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\11.mp4
+
+parse D:\bilibili\download\4758384\12\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":82808005,"downloaded_bytes":82808005,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1211543,"danmaku_count":18,"time_update_stamp":1601438562423,"time_create_stamp":1601430199570,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7735041,"page":12,"from":"vupload","part":"P12","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\12\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\12\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\12\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\12.mp4
+
+parse D:\bilibili\download\4758384\13\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":133142916,"downloaded_bytes":133142916,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1952418,"danmaku_count":12,"time_update_stamp":1601435212392,"time_create_stamp":1601430199577,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7735042,"page":13,"from":"vupload","part":"P13","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\13\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\13\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\13\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\13.mp4
+
+parse D:\bilibili\download\4758384\14\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":65859931,"downloaded_bytes":65859931,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":967001,"danmaku_count":14,"time_update_stamp":1601435346665,"time_create_stamp":1601430199588,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7735043,"page":14,"from":"vupload","part":"P14","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\14\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\14\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\14\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\14.mp4
+
+parse D:\bilibili\download\4758384\15\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":73629949,"downloaded_bytes":73629949,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1087918,"danmaku_count":22,"time_update_stamp":1601435444749,"time_create_stamp":1601430199595,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7735044,"page":15,"from":"vupload","part":"P15","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\15\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\15\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\15\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\15.mp4
+
+parse D:\bilibili\download\4758384\16\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":73813806,"downloaded_bytes":73813806,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1096079,"danmaku_count":16,"time_update_stamp":1601441853723,"time_create_stamp":1601430199605,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7737719,"page":16,"from":"vupload","part":"P16","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\16\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\16\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\16\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\16.mp4
+
+parse D:\bilibili\download\4758384\17\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":91533833,"downloaded_bytes":91533833,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1344972,"danmaku_count":6,"time_update_stamp":1601435604006,"time_create_stamp":1601430199612,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7737720,"page":17,"from":"vupload","part":"P17","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\17\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\17\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\17\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\17.mp4
+
+parse D:\bilibili\download\4758384\18\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":109759533,"downloaded_bytes":109759533,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1613460,"danmaku_count":24,"time_update_stamp":1601440633803,"time_create_stamp":1601430199620,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7737721,"page":18,"from":"vupload","part":"P18","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\18\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\18\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\18\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\18.mp4
+
+parse D:\bilibili\download\4758384\19\entry.json
+{"media_type":2,"has_dash_audio":true,"is_completed":true,"total_bytes":85710212,"downloaded_bytes":85710212,"title":"Python全套视频教程","type_tag":"16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1637926,"danmaku_count":21,"time_update_stamp":1601435901562,"time_create_stamp":1601430199627,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7737722,"page":19,"from":"vupload","part":"P19","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+D:\bilibili\download\4758384\19\16\video.m4s + D:\bilibili\download\4758384\19\16\audio.m4s
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\19\16\video.m4s -i D:\bilibili\download\4758384\19\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\19.mp4
+
+parse D:\bilibili\download\4758384\2\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":142231861,"downloaded_bytes":142231861,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1984919,"danmaku_count":72,"time_update_stamp":1601438257267,"time_create_stamp":1601430199490,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7720172,"page":2,"from":"vupload","part":"P2","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\2\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\2\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\2\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\2.mp4
+
+parse D:\bilibili\download\4758384\20\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":84135019,"downloaded_bytes":84135019,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1249001,"danmaku_count":11,"time_update_stamp":1601436016860,"time_create_stamp":1601430199636,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7737723,"page":20,"from":"vupload","part":"P20","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\20\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\20\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\20\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\20.mp4
+
+parse D:\bilibili\download\4758384\21\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":91773255,"downloaded_bytes":91773255,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1352543,"danmaku_count":6,"time_update_stamp":1601436139136,"time_create_stamp":1601430199643,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7738922,"page":21,"from":"vupload","part":"P21","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\21\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\21\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\21\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\21.mp4
+
+parse D:\bilibili\download\4758384\22\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":81961213,"downloaded_bytes":81961213,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1211918,"danmaku_count":20,"time_update_stamp":1601436257342,"time_create_stamp":1601430199650,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7738923,"page":22,"from":"vupload","part":"P22","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\22\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\22\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\22\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\22.mp4
+
+parse D:\bilibili\download\4758384\23\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":80400706,"downloaded_bytes":80400706,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1183252,"danmaku_count":23,"time_update_stamp":1601436501716,"time_create_stamp":1601430199664,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7739240,"page":23,"from":"vupload","part":"P23","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\23\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\23\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\23\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\23.mp4
+
+parse D:\bilibili\download\4758384\24\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":123398477,"downloaded_bytes":123398477,"title":"Python全套视频教程","type_tag":"lua.flv360.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1798118,"danmaku_count":43,"time_update_stamp":1601436715256,"time_create_stamp":1601430199678,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7739241,"page":24,"from":"vupload","part":"P24","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\24\lua.flv360.bili2api.16\ff.txt done
+write D:\bilibili\download\4758384\24\lua.flv360.bili2api.16\ff.txt done
+write D:\bilibili\download\4758384\24\lua.flv360.bili2api.16\ff.txt done
+write D:\bilibili\download\4758384\24\lua.flv360.bili2api.16\ff.txt done
+write D:\bilibili\download\4758384\24\lua.flv360.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\24\lua.flv360.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\24\lua.flv360.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\24.mp4
+
+parse D:\bilibili\download\4758384\25\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":97193843,"downloaded_bytes":97193843,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1432459,"danmaku_count":19,"time_update_stamp":1601441870581,"time_create_stamp":1601430199685,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7738926,"page":25,"from":"vupload","part":"P25","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\25\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\25\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\25\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\25.mp4
+
+parse D:\bilibili\download\4758384\26\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":63371124,"downloaded_bytes":63371124,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":921709,"danmaku_count":4,"time_update_stamp":1601437301154,"time_create_stamp":1601430199691,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7739677,"page":26,"from":"vupload","part":"P26","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\26\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\26\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\26\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\26.mp4
+
+parse D:\bilibili\download\4758384\27\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":26038802,"downloaded_bytes":26038802,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":380126,"danmaku_count":11,"time_update_stamp":1601437332444,"time_create_stamp":1601430199697,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7739678,"page":27,"from":"vupload","part":"P27","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\27\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\27\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\27\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\27.mp4
+
+parse D:\bilibili\download\4758384\28\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":50215414,"downloaded_bytes":50215414,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":730502,"danmaku_count":7,"time_update_stamp":1601437435530,"time_create_stamp":1601430199706,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7739679,"page":28,"from":"vupload","part":"P28","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\28\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\28\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\28\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\28.mp4
+
+parse D:\bilibili\download\4758384\29\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":55144963,"downloaded_bytes":55144963,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":813043,"danmaku_count":11,"time_update_stamp":1601438688192,"time_create_stamp":1601430199713,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7739680,"page":29,"from":"vupload","part":"P29","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\29\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\29\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\29\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\29.mp4
+
+parse D:\bilibili\download\4758384\3\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":131413778,"downloaded_bytes":131413778,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1846003,"danmaku_count":62,"time_update_stamp":1601434020298,"time_create_stamp":1601430199498,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7720173,"page":3,"from":"vupload","part":"P3","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\3\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\3\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\3\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\3.mp4
+
+parse D:\bilibili\download\4758384\30\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":114986966,"downloaded_bytes":114986966,"title":"Python全套视频教程","type_tag":"lua.flv360.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1698898,"danmaku_count":24,"time_update_stamp":1601439909846,"time_create_stamp":1601430199721,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7739681,"page":30,"from":"vupload","part":"P30","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\30\lua.flv360.bili2api.16\ff.txt done
+write D:\bilibili\download\4758384\30\lua.flv360.bili2api.16\ff.txt done
+write D:\bilibili\download\4758384\30\lua.flv360.bili2api.16\ff.txt done
+write D:\bilibili\download\4758384\30\lua.flv360.bili2api.16\ff.txt done
+write D:\bilibili\download\4758384\30\lua.flv360.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\30\lua.flv360.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\30\lua.flv360.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\30.mp4
+
+parse D:\bilibili\download\4758384\31\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":95843738,"downloaded_bytes":95843738,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1406085,"danmaku_count":20,"time_update_stamp":1601438857953,"time_create_stamp":1601430199727,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7740278,"page":31,"from":"vupload","part":"P31","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\31\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\31\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\31\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\31.mp4
+
+parse D:\bilibili\download\4758384\32\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":139115111,"downloaded_bytes":139115111,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":2042085,"danmaku_count":27,"time_update_stamp":1601439049742,"time_create_stamp":1601430199733,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7740279,"page":32,"from":"vupload","part":"P32","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\32\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\32\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\32\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\32.mp4
+
+parse D:\bilibili\download\4758384\33\entry.json
+{"media_type":2,"has_dash_audio":true,"is_completed":true,"total_bytes":107587844,"downloaded_bytes":107587844,"title":"Python全套视频教程","type_tag":"16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":2054756,"danmaku_count":23,"time_update_stamp":1601440745000,"time_create_stamp":1601430199740,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7740280,"page":33,"from":"vupload","part":"P33","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+D:\bilibili\download\4758384\33\16\video.m4s + D:\bilibili\download\4758384\33\16\audio.m4s
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\33\16\video.m4s -i D:\bilibili\download\4758384\33\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\33.mp4
+
+parse D:\bilibili\download\4758384\34\entry.json
+{"media_type":2,"has_dash_audio":true,"is_completed":true,"total_bytes":115057423,"downloaded_bytes":115057423,"title":"Python全套视频教程","type_tag":"16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":2197744,"danmaku_count":70,"time_update_stamp":1601439962787,"time_create_stamp":1601430199748,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7740281,"page":34,"from":"vupload","part":"P34","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+D:\bilibili\download\4758384\34\16\video.m4s + D:\bilibili\download\4758384\34\16\audio.m4s
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\34\16\video.m4s -i D:\bilibili\download\4758384\34\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\34.mp4
+
+parse D:\bilibili\download\4758384\35\entry.json
+{"media_type":2,"has_dash_audio":true,"is_completed":true,"total_bytes":130556623,"downloaded_bytes":130556623,"title":"Python全套视频教程","type_tag":"16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":2494656,"danmaku_count":71,"time_update_stamp":1601439580900,"time_create_stamp":1601430199757,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7740282,"page":35,"from":"vupload","part":"P35","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+D:\bilibili\download\4758384\35\16\video.m4s + D:\bilibili\download\4758384\35\16\audio.m4s
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\35\16\video.m4s -i D:\bilibili\download\4758384\35\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\35.mp4
+
+parse D:\bilibili\download\4758384\4\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":143576996,"downloaded_bytes":143576996,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":2108218,"danmaku_count":51,"time_update_stamp":1601440046894,"time_create_stamp":1601430199507,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7722995,"page":4,"from":"vupload","part":"P4","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\4\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\4\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\4\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\4.mp4
+
+parse D:\bilibili\download\4758384\5\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":315897113,"downloaded_bytes":315897113,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":4654340,"danmaku_count":65,"time_update_stamp":1601438348469,"time_create_stamp":1601430199518,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7722996,"page":5,"from":"vupload","part":"P5","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\5\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\5\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\5\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\5.mp4
+
+parse D:\bilibili\download\4758384\6\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":89138424,"downloaded_bytes":89138424,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1306627,"danmaku_count":58,"time_update_stamp":1601434377829,"time_create_stamp":1601430199528,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7723771,"page":6,"from":"vupload","part":"P6","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\6\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\6\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\6\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\6.mp4
+
+parse D:\bilibili\download\4758384\7\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":84194289,"downloaded_bytes":84194289,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1259844,"danmaku_count":31,"time_update_stamp":1601434493385,"time_create_stamp":1601430199538,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7723772,"page":7,"from":"vupload","part":"P7","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\7\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\7\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\7\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\7.mp4
+
+parse D:\bilibili\download\4758384\8\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":103040492,"downloaded_bytes":103040492,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":1515478,"danmaku_count":33,"time_update_stamp":1601434618872,"time_create_stamp":1601430199544,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7723773,"page":8,"from":"vupload","part":"P8","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\8\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\8\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\8\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\8.mp4
+
+parse D:\bilibili\download\4758384\9\entry.json
+{"media_type":1,"has_dash_audio":false,"is_completed":true,"total_bytes":286384022,"downloaded_bytes":286384022,"title":"Python全套视频教程","type_tag":"lua.mp4.bili2api.16","cover":"http:\/\/i0.hdslb.com\/bfs\/archive\/be52c16fffd23f1945093f804acbba39c93dfef6.jpg","prefered_video_quality":16,"guessed_total_bytes":0,"total_time_milli":4205963,"danmaku_count":30,"time_update_stamp":1601442496148,"time_create_stamp":1601430199551,"can_play_in_advance":true,"interrupt_transform_temp_file":false,"avid":4758384,"spid":0,"seasion_id":0,"bvid":"BV1xs411i7ra","owner_id":21145516,"page_data":{"cid":7723774,"page":9,"from":"vupload","part":"P9","link":"","rich_vid":"","vid":"","has_alias":false,"weblink":"","offsite":"","tid":183,"width":352,"height":288,"rotate":0,"download_title":"","download_subtitle":""}}
+title: Python全套视频教程
+write D:\bilibili\download\4758384\9\lua.mp4.bili2api.16\ff.txt done
+combine flv: D:\bilibili\download\4758384\9\lua.mp4.bili2api.16\ff.txt
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\9\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\9.mp4
+
+
+
+
+
+
+Commands:
+
+"D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\1\16\video.m4s -i D:\bilibili\download\4758384\1\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\1.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\10\16\video.m4s -i D:\bilibili\download\4758384\10\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\10.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\11\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\11.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\12\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\12.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\13\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\13.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\14\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\14.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\15\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\15.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\16\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\16.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\17\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\17.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\18\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\18.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\19\16\video.m4s -i D:\bilibili\download\4758384\19\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\19.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\2\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\2.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\20\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\20.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\21\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\21.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\22\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\22.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\23\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\23.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\24\lua.flv360.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\24.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\25\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\25.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\26\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\26.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\27\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\27.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\28\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\28.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\29\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\29.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\3\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\3.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\30\lua.flv360.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\30.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\31\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\31.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\32\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\32.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\33\16\video.m4s -i D:\bilibili\download\4758384\33\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\33.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\34\16\video.m4s -i D:\bilibili\download\4758384\34\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\34.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -i D:\bilibili\download\4758384\35\16\video.m4s -i D:\bilibili\download\4758384\35\16\audio.m4s -c copy D:\bilibili\download\4758384_Python全套视频教程\35.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\4\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\4.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\5\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\5.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\6\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\6.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\7\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\7.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\8\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\8.mp4 & "D:\Program Portable\ffmpeg-20200824-3477feb-win64-static\bin\ffmpeg.exe" -f concat -safe 0 -i D:\bilibili\download\4758384\9\lua.mp4.bili2api.16\ff.txt -c copy D:\bilibili\download\4758384_Python全套视频教程\9.mp4 & 
+
+
+
+Disconnected from the target VM, address: '127.0.0.1:53162', transport: 'socket'
+
+Process finished with exit code 0

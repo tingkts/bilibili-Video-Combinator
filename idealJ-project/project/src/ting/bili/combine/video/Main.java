@@ -3,19 +3,19 @@ package ting.bili.combine.video;
 import java.io.*;
 
 public class Main {
-    final static String SOURCE_VIDEO_DIR = "I:\\!unarrange\\bilibili"; // the root directory mapped to "Android/data/com.bilibili.app.in/download"
+    final static String SOURCE_VIDEO_DIR = "D:\\bilibili\\download"; // the root directory mapped to "Android/data/com.bilibili.app.in/download"
     final static String FFMPEG_EXE = "\"D:\\Program Portable\\ffmpeg-20200824-3477feb-win64-static\\bin\\ffmpeg.exe\"";
     final static String FLV_FILE_LIST_NAME = "ff.txt";
 
     final static StringBuilder commands = new StringBuilder();
 
     public static void main(String[] args) {
-	    System.out.println("");
+        System.out.println("");
 
-		go();
+        go();
 
-		System.out.println("\n\n");
-		System.out.println("Commands:\n");
+        System.out.println("\n\n");
+        System.out.println("Commands:\n");
         System.out.println(commands);
         System.out.println("\n\n");
     }
