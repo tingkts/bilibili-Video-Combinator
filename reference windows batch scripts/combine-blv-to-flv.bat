@@ -1,0 +1,1 @@
+"C:\ffmpeg-20200821-412d63f-win64-static\bin\ffmpeg.exe" -f concat -i ff.txt -c copy output.mp4
