@@ -72,6 +72,7 @@ public class Main {
                                     title = title.replace('|', '_');
                                     title = title.replace(' ', '_');
                                     System.out.println("title: " + title);
+                                    break;
                                 }
                             }
                         }
