@@ -59,10 +59,10 @@ public class Main {
                             String[] splits = line.split(",");
                             for (String split : splits) {
                                 /*if (split.contains("index_title")) {
-                                    String indexTitle = split.substring(15, split.length() - 1);
-                                    indexTitle.strip();
-                                    System.out.println("index_title: " + indexTitle);
-                                    title += "_" + indexTitle;
+                                    String subtitle = split.substring(15, split.length() - 1);
+                                    subtitle.strip();
+                                    title += "_" + subtitle;
+                                    System.out.println("index_title: " + subtitle);
                                     break;
                                 } else */if (split.contains("title")) {
                                     title = split.substring(9, split.length() - 1);
@@ -110,14 +110,15 @@ public class Main {
                         } else if (mediaFile.getName().contains(".flv")) {
                             if (ffTxt == null) {
                                 ffTxt = new File(file.toString() + "\\" + FLV_FILE_LIST_NAME);
-                                if (!ffTxt.exists()){
-                                    try {
-                                        ffTxt.createNewFile();
-                                        ffTxt.setWritable(true);
-                                        ffTxt.setReadable(true);
-                                    } catch (IOException e) {
-                                        e.printStackTrace();
+                                try {
+                                    if (ffTxt.exists()) {
+                                        ffTxt.delete();
                                     }
+                                    ffTxt.createNewFile();
+                                    ffTxt.setWritable(true);
+                                    ffTxt.setReadable(true);
+                                } catch (IOException e) {
+                                    e.printStackTrace();
                                 }
                             }
                             writeFlvFileList(ffTxt, String.format("file \'%s\'\n", mediaFile.toString()));
@@ -184,7 +185,7 @@ public class Main {
             fop.write(contentInBytes);
             fop.flush();
             fop.close();
-            System.out.println("write " + file + " done");
+            System.out.println("write " + content + " to " + file + " done");
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("write " + file + " failed!");
