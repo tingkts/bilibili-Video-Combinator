@@ -3,8 +3,9 @@ package ting.bili.combine.video;
 import java.io.*;
 
 public class Main {
-    final static String SOURCE_VIDEO_DIR = "D:\\bilibili\\download"; // the root directory mapped to "Android/data/com.bilibili.app.in/download"
-    final static String FFMPEG_EXE = "\"D:\\Program Portable\\ffmpeg-20200824-3477feb-win64-static\\bin\\ffmpeg.exe\"";
+    final static String SOURCE_VIDEO_DIR = "D:\\bilbibili-download"; // the root directory mapped to "Android/data/com.bilibili.app.in/download"
+    final static String OUTPUT_VIDEO_DIR = SOURCE_VIDEO_DIR + "\\out";
+    final static String FFMPEG_EXE = "\"C:\\ffmpeg-20200821-412d63f-win64-static\\bin\\ffmpeg.exe\"";
     final static String FLV_FILE_LIST_NAME = "ff.txt";
 
     final static StringBuilder commands = new StringBuilder();
@@ -41,7 +42,7 @@ public class Main {
         }
         boolean isSingleProgram = (indexDirs.length == 1) ? true : false;
         System.out.println(seriesOrSingleProgramDir + (isSingleProgram ? " has single file" : " have multiple files"));
-        String title = null;
+        String title = null, indexTitle = null, partName = null;
         for (File indexDir : indexDirs) { // 1, 2, 3, ... , N
             if (indexDir.isFile())
                 continue;
@@ -58,21 +59,18 @@ public class Main {
                             System.out.println(line);
                             String[] splits = line.split(",");
                             for (String split : splits) {
-                                /*if (split.contains("index_title")) {
-                                    String subtitle = split.substring(15, split.length() - 1);
-                                    subtitle.strip();
-                                    title += "_" + subtitle;
-                                    System.out.println("index_title: " + subtitle);
-                                    break;
-                                } else */if (split.contains("title")) {
+                                if (split.contains("\"title\"")) {
                                     title = split.substring(9, split.length() - 1);
-                                    title.strip();
-                                    title = title.replace('\\', '_');
-                                    title = title.replace('/', '_');
-                                    title = title.replace('|', '_');
-                                    title = title.replace(' ', '_');
+                                    title = validateFilename(title);
                                     System.out.println("title: " + title);
-                                    break;
+                                } else if (split.contains("\"index_title\"")) {
+                                    indexTitle = split.substring(15, split.length() - 1);
+                                    indexTitle = validateFilename(indexTitle);
+                                    System.out.println("index_title: " + indexTitle);
+                                } else if (split.contains("\"part\"")) {
+                                    partName = split.substring(8, split.length() - 1);
+                                    partName = validateFilename(partName);
+                                    System.out.println("part: " + partName);
                                 }
                             }
                         }
@@ -88,7 +86,11 @@ public class Main {
 
             File seriesOutputDir = null;
             if (!isSingleProgram && title != null) {
-                (seriesOutputDir = new File(SOURCE_VIDEO_DIR + "\\" + seriesOrSingleProgramDir.getName() + "_" + title)).mkdir();
+                File outVideoDir = new File(OUTPUT_VIDEO_DIR);
+                if (!outVideoDir.exists()) {
+                    outVideoDir.mkdir();
+                }
+                (seriesOutputDir = new File(OUTPUT_VIDEO_DIR + "\\" + title + "_" + seriesOrSingleProgramDir.getName())).mkdir();
             }
 
             // combine video
@@ -98,9 +100,9 @@ public class Main {
                     File ffTxt = null;
                     String outputFile;
                     if (isSingleProgram) {
-                        outputFile = "\"" + SOURCE_VIDEO_DIR + "\\" + seriesOrSingleProgramDir.getName() + (title == null ? "" : " " + title) + ".mp4" + "\"";
+                        outputFile = "\"" + OUTPUT_VIDEO_DIR + "\\" + (title == null ? "" : title) + (partName.equalsIgnoreCase(title) ? "" : "_" + partName)  + "_" + seriesOrSingleProgramDir.getName() + ".mp4" + "\"";
                     } else {
-                        outputFile = seriesOutputDir.toString() + "\\" + indexDir.getName() + ".mp4";
+                        outputFile = "\"" + seriesOutputDir.toString() + "\\" + indexDir.getName() + (partName == null ? "" : "_" + partName) + (indexTitle == null ? "" : "_" + indexTitle) +".mp4" + "\"";
                     }
                     for (File mediaFile : file.listFiles()) {
                         if (mediaFile.getName().contains("video.m4s")) {
@@ -128,7 +130,7 @@ public class Main {
                             System.out.println(videoM4s + " + " + audioM4s);
                             // "C:\ffmpeg-20200821-412d63f-win64-static\bin\ffmpeg.exe" -i %%x\64\video.m4s -i %%x\64\audio.m4s -c copy %%x.mp4
 
-                            String cmd = FFMPEG_EXE + " -i " + videoM4s + " -i " + audioM4s + " -c copy " + outputFile;
+                            String cmd = FFMPEG_EXE + " -i " + "\"" + videoM4s + "\"" + " -i " + "\"" + audioM4s + "\"" + " -c copy " + outputFile;
                             System.out.println(cmd);
                             commands.append(cmd);
                             commands.append(" & ");
@@ -148,7 +150,7 @@ public class Main {
                     if (ffTxt != null) {
                         System.out.println("combine flv: " + ffTxt);
                         // "C:\ffmpeg-20200821-412d63f-win64-static\bin\ffmpeg.exe" -f concat -i ff.txt -c copy output.mp4
-                        String cmd = FFMPEG_EXE + " -f concat -safe 0 -i " + ffTxt.toString() + " -c copy " + outputFile;
+                        String cmd = FFMPEG_EXE + " -f concat -safe 0 -i " + "\"" + ffTxt.toString() + "\"" + " -c copy " + outputFile;
                         System.out.println(cmd);
                         commands.append(cmd);
                         commands.append(" & ");
@@ -202,5 +204,19 @@ public class Main {
             }
         }
         return true;
+    }
+
+    static String validateFilename(String filename) {
+        filename = filename.strip()
+            .replace('\\', '_')
+            .replace('/', '_')
+            .replace(':', '_')
+            .replace('*', '_')
+            .replace('?', '_')
+            .replace('\"', '_')
+            .replace('<', '_')
+            .replace('>', '_')
+            .replace('|', '_');
+        return filename;
     }
 }
