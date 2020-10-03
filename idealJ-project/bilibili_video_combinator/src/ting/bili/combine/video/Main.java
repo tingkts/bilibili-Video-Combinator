@@ -9,16 +9,11 @@ public class Main {
     final static String FLV_FILE_LIST_NAME = "ff.txt";
 
     final static StringBuilder commands = new StringBuilder();
+    static int commandSegments = 1;
 
     public static void main(String[] args) {
-        System.out.println("");
-
         go();
-
-        System.out.println("\n\n");
-        System.out.println("Commands:\n");
-        System.out.println(commands);
-        System.out.println("\n\n");
+        System.out.println("\nCommands:\n" + commands);
     }
 
     private static void go() {
@@ -129,11 +124,10 @@ public class Main {
                             // do combine video
                             System.out.println(videoM4s + " + " + audioM4s);
                             // "C:\ffmpeg-20200821-412d63f-win64-static\bin\ffmpeg.exe" -i %%x\64\video.m4s -i %%x\64\audio.m4s -c copy %%x.mp4
-
                             String cmd = FFMPEG_EXE + " -i " + "\"" + videoM4s + "\"" + " -i " + "\"" + audioM4s + "\"" + " -c copy " + outputFile;
                             System.out.println(cmd);
-                            commands.append(cmd);
-                            commands.append(" & ");
+                            appendCommands(cmd);
+
 //                            try {
 //                                System.out.println("execute: " + cmd);
 //                                Process process = Runtime.getRuntime().exec(cmd);
@@ -152,15 +146,13 @@ public class Main {
                         // "C:\ffmpeg-20200821-412d63f-win64-static\bin\ffmpeg.exe" -f concat -i ff.txt -c copy output.mp4
                         String cmd = FFMPEG_EXE + " -f concat -safe 0 -i " + "\"" + ffTxt.toString() + "\"" + " -c copy " + outputFile;
                         System.out.println(cmd);
-                        commands.append(cmd);
-                        commands.append(" & ");
+                        appendCommands(cmd);
                     }
                     break;
                 }
             }
             System.out.println("");
         }
-
         System.out.println("");
         System.out.println("");
     }
@@ -218,5 +210,13 @@ public class Main {
             .replace('>', '_')
             .replace('|', '_');
         return filename;
+    }
+
+    static void appendCommands(String cmd) {
+        commands.append(cmd + " & ");
+        if (commands.length() > commandSegments * 5000) {
+            commandSegments++;
+            commands.append("\n\n");
+        }
     }
 }
