@@ -5,11 +5,15 @@ import java.io.*;
 public class Main {
     final static String SOURCE_VIDEO_DIR = "C:\\Users\\tingsung\\Desktop\\bili-download"; // the root directory mapped to "Android/data/com.bilibili.app.in/download"
     final static String OUTPUT_VIDEO_DIR = SOURCE_VIDEO_DIR + "\\out";
-    final static String FFMPEG_EXE = "\"D:\\Program Portable\\ffmpeg-20200824-3477feb-win64-static\\bin\\ffmpeg.exe\"";
+    final static String FFMPEG_EXE = "\"C:\\ffmpeg-20200821-412d63f-win64-static\\bin\\ffmpeg.exe\"";
     final static String FLV_FILE_LIST_NAME = "ff.txt";
 
     final static StringBuilder commands = new StringBuilder();
     static int commandSegments = 1;
+
+    final static String OUTPUT_CONVERT_TO_MP4_SCRIPT = SOURCE_VIDEO_DIR + "\\convertToMp4.bat";
+    static File convertToMp4Script;
+    final static String CRLF = "\r\n";
 
     public static void main(String[] args) {
         go();
@@ -119,7 +123,7 @@ public class Main {
                                     e.printStackTrace();
                                 }
                             }
-                            writeFlvFileList(ffTxt, String.format("file \'%s\'\n", mediaFile.toString()));
+                            writeFile(ffTxt, String.format("file \'%s\'\n", mediaFile.toString()));
                         }
                         if (videoM4s != null && audioM4s != null) {
                             // do combine video
@@ -128,6 +132,7 @@ public class Main {
                             String cmd = FFMPEG_EXE + " -i " + "\"" + videoM4s + "\"" + " -i " + "\"" + audioM4s + "\"" + " -c copy " + outputFile;
                             System.out.println(cmd);
                             appendCommands(cmd);
+                            makeOutputConvertToMp4ScriptFile(cmd);
 
 //                            try {
 //                                System.out.println("execute: " + cmd);
@@ -148,6 +153,7 @@ public class Main {
                         String cmd = FFMPEG_EXE + " -f concat -safe 0 -i " + "\"" + ffTxt.toString() + "\"" + " -c copy " + outputFile;
                         System.out.println(cmd);
                         appendCommands(cmd);
+                        makeOutputConvertToMp4ScriptFile(cmd);
                     }
                     break;
                 }
@@ -158,7 +164,7 @@ public class Main {
         System.out.println("");
     }
 
-    static boolean writeFlvFileList(File file, String content) {
+    static boolean writeFile(File file, String content) {
 //        try{
 //            BufferedWriter bw = new BufferedWriter(new FileWriter(file.getName()));
 //            bw.write(content);
@@ -197,6 +203,23 @@ public class Main {
             }
         }
         return true;
+    }
+
+    static boolean makeOutputConvertToMp4ScriptFile(String content) {
+        if (convertToMp4Script == null) {
+            convertToMp4Script = new File(OUTPUT_CONVERT_TO_MP4_SCRIPT);
+            if (convertToMp4Script.exists()) {
+                convertToMp4Script.delete();
+            }
+            try {
+                convertToMp4Script.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return false;
+            }
+            writeFile(convertToMp4Script, "chcp 65001" + CRLF + CRLF);
+        }
+        return writeFile(convertToMp4Script, content + CRLF);
     }
 
     static String validateFilename(String filename) {
