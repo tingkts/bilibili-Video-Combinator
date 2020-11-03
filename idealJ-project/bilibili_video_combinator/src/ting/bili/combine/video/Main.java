@@ -3,9 +3,9 @@ package ting.bili.combine.video;
 import java.io.*;
 
 public class Main {
-    final static String SOURCE_VIDEO_DIR = "D:\\bilbibili-download"; // the root directory mapped to "Android/data/com.bilibili.app.in/download"
+    final static String SOURCE_VIDEO_DIR = "C:\\Users\\tingsung\\Desktop\\bili-download"; // the root directory mapped to "Android/data/com.bilibili.app.in/download"
     final static String OUTPUT_VIDEO_DIR = SOURCE_VIDEO_DIR + "\\out";
-    final static String FFMPEG_EXE = "\"C:\\ffmpeg-20200821-412d63f-win64-static\\bin\\ffmpeg.exe\"";
+    final static String FFMPEG_EXE = "\"D:\\Program Portable\\ffmpeg-20200824-3477feb-win64-static\\bin\\ffmpeg.exe\"";
     final static String FLV_FILE_LIST_NAME = "ff.txt";
 
     final static StringBuilder commands = new StringBuilder();
@@ -79,12 +79,13 @@ public class Main {
                 }
             }
 
+            File outVideoDir = new File(OUTPUT_VIDEO_DIR);
+            if (!outVideoDir.exists()) {
+                outVideoDir.mkdir();
+            }
+
             File seriesOutputDir = null;
             if (!isSingleProgram && title != null) {
-                File outVideoDir = new File(OUTPUT_VIDEO_DIR);
-                if (!outVideoDir.exists()) {
-                    outVideoDir.mkdir();
-                }
                 (seriesOutputDir = new File(OUTPUT_VIDEO_DIR + "\\" + title + "_" + seriesOrSingleProgramDir.getName())).mkdir();
             }
 
