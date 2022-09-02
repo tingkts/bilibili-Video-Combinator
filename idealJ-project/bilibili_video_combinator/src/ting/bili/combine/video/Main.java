@@ -42,6 +42,7 @@ public class Main {
         boolean isSingleProgram = (indexDirs.length == 1) ? true : false;
         System.out.println(seriesOrSingleProgramDir + (isSingleProgram ? " has single file" : " have multiple files"));
         String title = null, indexTitle = null, partName = null;
+        String ownerName = null;
         for (File indexDir : indexDirs) { // 1, 2, 3, ... , N
             if (indexDir.isFile())
                 continue;
@@ -71,6 +72,11 @@ public class Main {
                                     partName = validateFilename(partName);
                                     System.out.println("part: " + partName);
                                 }
+                                if (split.contains("\"owner_name\"")) {
+                                    ownerName = split.substring(14, split.length() - 1);
+                                    ownerName = validateFilename(ownerName);
+                                    System.out.println("owner_name: " + ownerName);
+                                }
                             }
                         }
                         fr.close();
@@ -90,7 +96,7 @@ public class Main {
 
             File seriesOutputDir = null;
             if (!isSingleProgram && title != null) {
-                (seriesOutputDir = new File(OUTPUT_VIDEO_DIR + "\\" + title + "_" + seriesOrSingleProgramDir.getName())).mkdir();
+                (seriesOutputDir = new File(OUTPUT_VIDEO_DIR + "\\" + ownerName + "_" + title + "_" + seriesOrSingleProgramDir.getName())).mkdir();
             }
 
             // combine video
@@ -100,7 +106,10 @@ public class Main {
                     File ffTxt = null;
                     String outputFile;
                     if (isSingleProgram) {
-                        outputFile = "\"" + OUTPUT_VIDEO_DIR + "\\" + (title == null ? "" : title) + (partName.equalsIgnoreCase(title) ? "" : "_" + partName)  + "_" + seriesOrSingleProgramDir.getName() + ".mp4" + "\"";
+                        outputFile = "\"" + OUTPUT_VIDEO_DIR + "\\" + (ownerName == null ? "" : ownerName + "_")
+                                + (title == null ? "" : title)
+                                + (partName.equalsIgnoreCase(title) ? "" : "_" + partName)  + "_"
+                                + seriesOrSingleProgramDir.getName() + ".mp4" + "\"";
                     } else {
                         outputFile = "\"" + seriesOutputDir.toString() + "\\" + indexDir.getName() + (partName == null ? "" : "_" + partName) + (indexTitle == null ? "" : "_" + indexTitle) +".mp4" + "\"";
                     }
